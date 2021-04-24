@@ -1,0 +1,13 @@
+form > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+form > div:first-child {
+  padding-bottom: 30px;
+}
+
+#display {
+  font-size: 150%;
+  text-align: center;
+}

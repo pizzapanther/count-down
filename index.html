@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Count Down Timer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Count Down Timer</h1>
+    <form>
+      <div>
+        <div>
+          <label>Hours:</label><br>
+          <input id="hours" type="number" step="1" value="0" min="0">
+        </div>
+        <div>
+          <label>Minutes:</label><br>
+          <input id="minutes" type="number" step="1" value="0" min="0">
+        </div>
+        <div>
+          <label>Seconds:</label><br>
+          <input id="seconds" type="number" step="1" value="0" min="0">
+        </div>
+      </div>
+      <div>
+        <div>
+          <button type="submit">Start Timer</button>
+          <button id="pause" type="button">Pause</button>
+        </div>
+      </div>
+    </form>
+    <br><br>
+    <div id="display">
+      0 seconds
+    </div>
+    <audio id="alarm">
+      <source src="alarm.mp3" type="audio/mpeg">
+    </audio>
+    <script src="timer.js"></script>
+  </body>
+</html>
